@@ -3,3 +3,36 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../src/assets/fonts/Quicksand-Regular.ttf') format('truetype'); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playwrite AU QLD';
+  src: url('../src/assets/fonts/PlaywriteAUQLD-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../src/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Edu Australia Hand';
+  src: url('../src/assets/fonts/EduAUVICWANTPre-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+  
+  /* Apply the fonts globally */
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
