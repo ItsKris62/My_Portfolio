@@ -1,34 +1,38 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import serverCabinet from '../assets/images/project-images/cabinet.jpg';
-import cleanslate from '../assets/images/project-images/cleanslate-homepage.png';
-import portfolioImage from '../assets/images/project-images/portfolio-sample.png';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
+import serverCabinet from "../assets/images/project-images/cabinet.jpg";
+import cleanslate from "../assets/images/project-images/cleanslate-homepage.png";
+import portfolioImage from "../assets/images/project-images/portfolio-sample.png";
 
 const projects = [
   {
-    title: 'A Dry Cleaning and Laundry Web App',
-    description: 'A project for a laundry and dry cleaning service application, with a user dashboard and admin dashboard',
+    title: "A Dry Cleaning and Laundry Web App",
+    description:
+      "A project for a laundry and dry cleaning service application, with a user dashboard and admin dashboard",
     image: cleanslate,
-    technologies: ['React', 'Node.js', 'Github', 'MongoDB Atlas'],
-    github: 'https://github.com/ItsKris62/sparklewash',
+    technologies: ["React", "Node.js", "Github", "MongoDB Atlas"],
+    github: "https://github.com/ItsKris62/sparklewash",
   },
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website built with React and TailwindCSS.',
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio website built with React and TailwindCSS.",
     image: portfolioImage,
-    technologies: ['React', 'TailwindCSS'],
-    preview: 'https://example.com/portfolio',
+    technologies: ["React", "TailwindCSS"],
+    preview: "https://example.com/portfolio",
   },
   {
-    title: 'Remote Monitoring and Management System',
-    description: 'Implemented an RMM system and added it to our Managed Services Provider portfolio',
-    image: '',
-    technologies: ['PHP', 'MySQL', 'Bootstrap'],
+    title: "Remote Monitoring and Management System",
+    description:
+      "Implemented an RMM system and added it to our Managed Services Provider portfolio",
+    image: "",
+    technologies: ["PHP", "MySQL", "Bootstrap"],
   },
   {
-    title: 'Server Cabinet Maintenance',
-    description: 'Network cabling, Server Cabinet setup and cable management, Network Configuration',
+    title: "Server Cabinet Maintenance",
+    description:
+      "Network cabling, Server Cabinet setup and cable management, Network Configuration",
     image: serverCabinet,
   },
 ];
@@ -46,7 +50,9 @@ const Projects = () => {
 
   return (
     <div id="projects" className="py-20 bg-secondary text-primary">
-      <h2 className="text-3xl font-playfair font-bold text-center mb-12">Projects</h2>
+      <h2 className="text-3xl font-playfair font-bold text-center mb-12">
+        Projects
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
           <motion.div
@@ -89,7 +95,9 @@ const Projects = () => {
             >
               X
             </button>
-            <h3 className="text-2xl font-edu font-bold mb-4">{selectedProject.title}</h3>
+            <h3 className="text-2xl font-edu font-bold mb-4">
+              {selectedProject.title}
+            </h3>
             <p className="font-quicksand mb-4">{selectedProject.description}</p>
             {selectedProject.image && (
               <img
@@ -99,9 +107,15 @@ const Projects = () => {
               />
             )}
             <div className="flex space-x-4 mb-4">
-              {selectedProject.technologies?.includes('React') && <FaReact size={24} />}
-              {selectedProject.technologies?.includes('Node.js') && <FaNodeJs size={24} />}
-              {selectedProject.technologies?.includes('MySQL') && <FaDatabase size={24} />}
+              {selectedProject.technologies?.includes("React") && (
+                <FaReact size={24} />
+              )}
+              {selectedProject.technologies?.includes("Node.js") && (
+                <FaNodeJs size={24} />
+              )}
+              {selectedProject.technologies?.includes("MySQL") && (
+                <FaDatabase size={24} />
+              )}
             </div>
             {selectedProject.preview && (
               <a
