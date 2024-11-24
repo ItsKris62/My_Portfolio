@@ -2,12 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logo-veriwoks.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="A portfolio showcasing my projects and skills in web development."
+    />
+
+    <meta
+      name="keywords"
+      content="web development, portfolio, React, developer"
+    />
+    <meta name="author" content="Christopher Rateng" />
+    <meta property="og:title" content="My Web Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my projects and skills in web development."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/logo-veriwoks.png" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Web Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore my projects and skills in web development."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/VERIWOKS.png" />
+
+    <!-- Content Security Policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+       default-src 'self';
+       script-src 'self' https://trusted.cdn.com;
+       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+       font-src 'self' https://fonts.gstatic.com;
+       img-src 'self' data: https:;
+       object-src 'none';
+       connect-src 'self' https://api.example.com;"
     />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -23,7 +57,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>My Portfolio</title>
   </head>
   <body class="h-screen">
     <noscript>You need to enable JavaScript to run this app.</noscript>

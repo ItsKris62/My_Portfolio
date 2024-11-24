@@ -1,31 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const academicData = [
-    {
-        institution: 'United States International University - Africa',
-        degree: 'Master of Science in Information Systems and Technology',
-        duration: 'Jan/2024 - current',
-        description: 'Focused on software development, network engineering, and database management. Graduated with honors.',
-      },
-    {
-    institution: 'United States International University - Africa',
-    degree: 'Bachelor of Science in Information Systems and Technology',
-    duration: 'Sept/2015 - Aug/2019',
-    description: 'Focused on software development, network engineering, and database management. Graduated with honors.',
+  {
+    institution: "United States International University - Africa",
+    degree: "Master of Science in Information Systems and Technology",
+    duration: "Jan/2024 - current",
+    description: "Focused on Internet Security and Cybercrime.",
   },
   {
-    institution: 'St. Thomas of Aquinas Boys High School',
-    degree: 'Kenya Certificate of Secondary Education (KCSE)',
-    duration: '2011 - 2014',
-    description: 'Excelled in science and mathematics, laying a solid foundation for my IT career.',
+    institution: "United States International University - Africa",
+    degree: "Bachelor of Science in Information Systems and Technology",
+    duration: "Sept/2015 - Aug/2019",
+    description:
+      "Focused on Internet Security and Networking. Laying a foundation in my IT Career.",
+  },
+  {
+    institution: "St. Thomas of Aquinas Boys High School",
+    degree: "Kenya Certificate of Secondary Education (KCSE)",
+    duration: "2011 - 2014",
+    description: "High School",
   },
 ];
 
 const AcademicPath = () => {
   return (
     <div id="academic" className="py-20 bg-secondary text-primary">
-      <h2 className="text-3xl font-playfair font-bold text-center mb-12">Academic Path</h2>
+      <h2 className="text-3xl font-playfair font-bold text-center mb-12">
+        Academic Path
+      </h2>
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical Line */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-accent h-full"></div>
@@ -35,7 +38,7 @@ const AcademicPath = () => {
           <motion.div
             key={index}
             className={`flex items-center justify-between ${
-              index % 2 === 0 ? 'flex-row-reverse' : ''
+              index % 2 === 0 ? "flex-row-reverse" : ""
             } mb-12`}
             initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
             animate={{ opacity: 1, x: 0 }}
