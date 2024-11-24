@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-primary text-secondary flex justify-between items-center px-6 py-4 shadow-md">
       <h1 className="text-2xl font-playfair font-bold">Christopher Rateng</h1>
       <div className="flex space-x-6">
-        {['home', 'about', 'experience', 'projects', 'certificates', 'contact'].map((section) => (
+        {['home', 'about', 'academic', 'experience', 'projects', 'certificates', 'contact'].map((section) => (
           <Link
             key={section}
             to={section}
